@@ -1,0 +1,8 @@
+Meeting list
+<p *ngFor="let meeting of meetingRooms">
+    {{ meeting.name }}
+</p>
+
+<p *ngFor="let meeting of meetings; let i = index">
+    <app-meeting [model]="meeting"></app-meeting>
+</p>
